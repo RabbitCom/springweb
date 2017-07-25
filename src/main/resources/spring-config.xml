@@ -21,7 +21,8 @@
     </bean>
     
     
-    <context:component-scan base-package="com.nezha.controller" />
+     <!-- 自动扫描 -->
+    <context:component-scan base-package="com.nezha.*" />
     <!-- 开启注解 -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean>
@@ -35,8 +36,6 @@
     <!-- aspectj aop启用CGliB代理 -->
     <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
     <!-- 扫描service -->
-    <context:component-scan base-package="com.nezha.service"/>
-
     <import resource="classpath:spring/spring-mybatis.xml"/>
     <!-- 
     <import resource="classpath:spring/spring-redis.xml"/>
