@@ -10,4 +10,6 @@ public interface UserMapper extends BaseMapper<User>{
 
 	public User getId(int id);
 	
+	public Integer insert(User entity);
+	
 }
