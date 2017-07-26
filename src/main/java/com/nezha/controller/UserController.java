@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.nezha.entity.User;
+import com.nezha.entity.UserVo;
 import com.nezha.service.UserService;
 
 @Controller
@@ -25,6 +26,7 @@ public class UserController {
 	@RequestMapping("/login")
 	public String userLogin(){
 		System.out.println("come in");
+		UserVo userVo = userService.getId(1);
 		User user = userService.selectById(1);
 		return "index";
 	}

@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nezha.entity.User;
+import com.nezha.entity.UserVo;
 import com.nezha.mapper.UserMapper;
 import com.nezha.service.UserService;
 
@@ -16,6 +17,11 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User selectById(int id) {
 		return userMapper.selectById(id);
+	}
+
+	@Override
+	public UserVo getId(int id) {
+		return userMapper.getId(id);
 	}
 	
 }
