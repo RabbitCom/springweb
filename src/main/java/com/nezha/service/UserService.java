@@ -10,7 +10,6 @@ public interface UserService extends IService<User>{
 	@Override
 	boolean insert(User entity);
 	
-	@Override
-	User selectById(Serializable id);
+	User selectById(int id);
 	
 }

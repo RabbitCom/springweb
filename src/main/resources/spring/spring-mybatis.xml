@@ -36,7 +36,7 @@
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping.xml文件，**表示迭代查找 -->
         <property name="configLocation" value="classpath:xml/mybatis-config.xml"></property>
-         <property name="mapperLocations" value="classpath*:/sqlMapperXml/*.xml"></property>
+         <property name="mapperLocations" value="classpath:sqlMapperXml/*Mapper.xml"></property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 ,包下的类需要使用@MapperScan注解,否则容器注入会失败 -->
