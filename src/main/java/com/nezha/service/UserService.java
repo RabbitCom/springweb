@@ -7,4 +7,5 @@ public interface UserService {
 	
 	User selectById(int id);
 	UserVo getId(int id);
+	boolean registerUser(User user);
 }

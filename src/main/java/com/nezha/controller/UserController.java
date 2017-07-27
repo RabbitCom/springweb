@@ -30,4 +30,16 @@ public class UserController {
 		User user = userService.selectById(1);
 		return "index";
 	}
+
+	@RequestMapping("/register")
+	public String register(){
+		System.out.println("navigation to register");
+		return "register";
+	}
+
+	@RequestMapping("/registerUser")
+	public String registerUser(User user){
+		userService.registerUser(user);
+		return "index";
+	}
 }

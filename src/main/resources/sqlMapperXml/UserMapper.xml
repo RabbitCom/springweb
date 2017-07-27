@@ -15,4 +15,9 @@
 	<select id="selectById" parameterType="Integer" resultType="com.nezha.entity.User">
 	 	select * from user_test where id=#{id}
 	</select>
+
+    <!--新增用户-->
+    <insert id="registerUser" parameterType="com.nezha.entity.User">
+        Insert INTO User(id,login_name,`password`,phone) VALUES(#{id},#{name},#{password},#{phoneNumber})
+    </insert>
 </mapper>

@@ -23,5 +23,11 @@ public class UserServiceImpl implements UserService {
 	public UserVo getId(int id) {
 		return userMapper.getId(id);
 	}
-	
+
+	@Override
+	public boolean registerUser(User user) {
+		boolean flag = userMapper.registerUser(user);
+		return false;
+	}
+
 }
