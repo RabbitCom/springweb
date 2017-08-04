@@ -30,4 +30,10 @@ public class UserServiceImpl implements UserService {
 		return false;
 	}
 
+	@Override
+	public User loginCheck(User user) {
+		User userCheck = userMapper.loginCheck(user);
+		return userCheck;
+	}
+
 }

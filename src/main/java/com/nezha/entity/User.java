@@ -10,6 +10,17 @@ public class User implements Serializable{
 	
 	private String phoneNumber;
 
+	private String account;
+	
+	
+	public String getAccount() {
+		return account;
+	}
+
+	public void setAccount(String account) {
+		this.account = account;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -44,7 +55,7 @@ public class User implements Serializable{
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", 姓名=" + name + ", 密码=" + password + ", 电话号码=" + phoneNumber + "]";
+		return "User [id=" + id + ", 姓名=" + name + ", 密码=" + password + ", 电话号码=" + phoneNumber + ", 账号=" + account + "]";
 	}
 
 	
