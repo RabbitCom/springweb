@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,15 +39,16 @@ public class UserController {
 	}
 	
 	@RequestMapping("/login")
-	public String userLogin(HttpServletRequest request,User user){
+	public String userLogin(HttpServletRequest req,User user){
 		System.out.println("come in");
-//		UserVo userVo = userService.getId(1);
 		User userCheck = userService.loginCheck(user);
 		if(userCheck == null){
 			return  "index";
 		}
 		System.out.println("sss"+userCheck.toString());
-		request.setAttribute("user", userCheck);
+	    HttpSession session = req.getSession(); 
+	    session.setAttribute("name", userCheck.getName());
+	    session.setAttribute("id", userCheck.getId());
 		return  "page/main";
 	}
 

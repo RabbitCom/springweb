@@ -63,7 +63,7 @@
 				    
  
 <div id="login">
-	<form id="fm1Form" name="fm1" class="form-horizontal" action="${pageContext.request.contextPath}/user/login" method="post">
+	<form id="fm1Form" name="fm1" class="form-horizontal" action="${pageContext.request.contextPath}/userController/login" method="post">
 		<div style="position: absolute; top: 109px; right: 50px; width: 460px; height: 490px; background: #fff; border-radius: 6px;">
 			<div style="margin-top: 28px; margin-left: 22px; margin-bottom: -10px">
 				<p class="text-left">

@@ -20,14 +20,15 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `user_test`;
 CREATE TABLE `user_test` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `phoneNumber` varchar(255) DEFAULT NULL,
+ `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  `password` varchar(16) DEFAULT NULL,
+  `phoneNumber` varchar(20) DEFAULT NULL,
+  `account` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user_test
 -- ----------------------------
-INSERT INTO `user_test` VALUES ('1', 'nezha', '111111', '13203977736');
+INSERT INTO `user_test` VALUES ('1', 'nezha', '111111', '13203977736', 'nongyao');
