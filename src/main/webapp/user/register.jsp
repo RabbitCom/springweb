@@ -5,8 +5,8 @@
 <head>
     <title>Register</title>
     <meta charset="UTF-8">
-    <link href="${pageContext.request.contextPath}/clientlib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/clientlib/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/clientlib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/clientlib/css/bootstrapValidator.css" rel="stylesheet">
     <script type="text/javascript" src="${pageContext.request.contextPath}/clientlib/jquery/jquery-1.10.2.min.js"></script>
 </head>
 <body>
@@ -77,8 +77,8 @@
         </div>
 
     </form>
-    <script src="${pageContext.request.contextPath}/clientlib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="${pageContext.request.contextPath}/clientlib/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+    <script src="${pageContext.request.contextPath}/clientlib/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/clientlib/js/bootstrapValidator.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#registerForm')
